@@ -169,9 +169,9 @@ void generateModels(List<TableInfo> schemas);
    mvn spring-boot:run
    ```
 4. **Test Endpoints**
-   ```bash
+   
    You can test the REST endpoints using **Postman** by importing the following URLs and executing them:
-   ```
+   
    1. **GET Schema Metadata**
       - Method: `GET`
       - URL: `http://localhost:8080/api/metadata?schema=%`
