@@ -53,7 +53,6 @@ This tool automates the introspection of a MySQL database schema and the generat
 <image>  <!-- Architecture diagram -->
 
 ---
-
 ## Overall Architecture
 
 The system is composed of four main layers:
@@ -68,7 +67,9 @@ The system is composed of four main layers:
    Spring Web controllers expose endpoints to fetch raw metadata and to trigger model generation.
 
 ---
+## Crawler Workflow – Flowchart
 
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/dfceb8b2-9b2a-4514-b9e5-ebc21ff379e6)
 ## Technical Design
 
 ### Configuration
@@ -139,7 +140,6 @@ void generateModels(List<TableInfo> schemas);
    - Foreign keys relations
    - Index definitions
 
-<image>  <!-- Sequence diagram: config → crawl → metadata → model gen → class loading -->
 
 4. **Generate Java Classes**  
    For each table:
@@ -192,16 +192,6 @@ void generateModels(List<TableInfo> schemas);
 
 ---
 
-## Extensibility & Best Practices
-
-- **Error Handling**: Implement try/catch with custom exceptions and meaningful HTTP status codes.
-- **Security**: Secure endpoints with Spring Security or API keys.
-- **Logging**: Integrate SLF4J/Logback for crawl and generation logging.
-- **Caching**: Cache metadata for large schemas to reduce database load.
-- **Unit Tests**: Mock `DatabaseMetaData` for service-level testing.
-
----
-
 ## Sample Output
 
 ```json
@@ -225,5 +215,4 @@ void generateModels(List<TableInfo> schemas);
 
 ---
 
-*End of README.md*
 
