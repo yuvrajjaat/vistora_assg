@@ -69,7 +69,8 @@ The system is composed of four main layers:
 ---
 ## Crawler Workflow – Flowchart
 
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/dfceb8b2-9b2a-4514-b9e5-ebc21ff379e6)
+![Untitled Diagram drawio (1)](https://github.com/user-attachments/assets/8cd03204-b0f4-4aeb-8842-235dc3c7155c)
+
 ## Technical Design
 
 ### Configuration
